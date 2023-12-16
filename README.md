@@ -26,3 +26,9 @@ Before running the application, ensure you have the following installed on your 
 - - model --> book.go(for creating books model)
 - - routes--> bookstore-routes.go(routes of all the functions)
 - - utils --> utils.go(use of marshal to store inside the database)
+
+## Run the Application
+1. Go in the directory where main.go file is present
+2. To start the server, execute the below commands from the terminal:
+- - go build
+- - go run main.go
