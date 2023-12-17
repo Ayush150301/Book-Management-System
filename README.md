@@ -40,8 +40,8 @@ Before running the application, ensure you have the following installed on your 
 | GET    | /books                     | Returns list of all books             | Public            |
 | POST   | /books                     | Add new book                          | Private (JWT)     |
 | GET    | /books/{bookid}            | Return details of a specific book     | Public            |
-| PUT    | /books/{bookid}/update     | Update existing book                  | Private (JWT)     |
-| DELETE | /books/{bookid}/delete     | Delete an existing book               | Private (JWT)     |
+| PUT    | /books/{bookid}            | Update existing book                  | Private (JWT)     |
+| DELETE | /books/{bookid}            | Delete an existing book               | Private (JWT)     |
 </s>
 
 ## Create a Book
