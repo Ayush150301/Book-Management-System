@@ -138,8 +138,8 @@ Before running the application, ensure you have the following installed on your 
 
 
 ## Known Issues
-- Make sure that the datbase server is connected
-- Steps to check the database server is connected or not:-
+1. Make sure that the database server is connected
+2. Steps to check the database server is connected or not:-
   - On Windows: Use the Services application to check if the MySQL service is running
   - Test Database Connection in Code: If you have a Golang application using GORM to connect to the database, you can add a simple test in your code to check the database connection. For example:
     ```
@@ -163,3 +163,14 @@ Before running the application, ensure you have the following installed on your 
       }
 
     ```
+3. GORM Configuration Errors:
+    - Symptoms: GORM-related errors during database operations.
+    - Solution: Double-check the GORM configuration, including database dialect,connection settings, and model associations. Review GORM documentation and ensurecompatibility with the GORM version used in the project.
+
+4. Error Handling:
+    - Symptoms: Inadequate error handling leading to unexpected behavior.
+    - Solution: Implement robust error handling throughout your code. Log errors appropriately, and provide meaningful error messages to aid in debugging. Use Golang's panic and recover mechanisms judiciously.
+
+5. Dependency Management:
+    - Symptoms: Issues with package versions or missing dependencies.
+    - Solution: Use a dependency management tool like <u> `go mod`</u> to manage project dependencies. Specify compatible version ranges to avoid compatibility issues. Regularly update dependencies to benefit from bug fixes and improvements.
